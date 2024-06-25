@@ -11,7 +11,29 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav className="border-b border-black sticky top-0 bg-white">
+          <ul className="text-sm font-medium flex justify-between">
+            <div className="flex">
+              <li className="border-r border-black px-9 py-4">
+                Shop
+              </li>
+              <li className="border-r border-black px-9 py-4">
+                Contact
+              </li>
+            </div>
+            <div className="flex">
+              <li className="border-l border-black px-9 py-4">
+                Sign in
+              </li>
+              <li className="border-l border-black px-9 py-4">
+                Cart
+              </li>
+            </div>
+          </ul>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }

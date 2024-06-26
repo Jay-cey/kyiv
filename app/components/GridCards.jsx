@@ -8,6 +8,7 @@ export default function gridCards(props) {
     } else {
         arr = "← Shop now"
     }
+    
   return (
     <div className="grid grid-cols-2">
         <div className={"w-full flex flex-col justify-center text-center"}>

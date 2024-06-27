@@ -11,7 +11,7 @@ export default function gridCards(props) {
     
   return (
     <div className="grid grid-cols-2">
-        <div className={"w-full flex flex-col justify-center text-center"}>
+        <div className={"w-full flex flex-col justify-center text-center border-l border-b border-black"}>
             <p className="font-bold text-3xl">{props.title}</p>
             <p className="font-semibold"> 
                 <Link href="#">{arr}</Link>

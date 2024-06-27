@@ -12,21 +12,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="border-b border-black sticky top-0 bg-white">
+        <nav className="border border-black sticky top-0 bg-white">
           <ul className="text-sm font-medium flex justify-between">
-            <div className="flex">
-              <li className="border-r border-black px-9 py-4">
+            <div className="flex *:border-l *:border-black *:px-9 *:py-4">
+              <li>
                 Shop
               </li>
               <li className="border-r border-black px-9 py-4">
                 Contact
               </li>
             </div>
-            <div className="flex">
-              <li className="border-l border-black px-9 py-4">
+            <div className="flex *:border-l *:border-black *:px-9 *:py-4">
+              <li>
                 Sign in
               </li>
-              <li className="border-l border-black px-9 py-4">
+              <li>
                 Cart
               </li>
             </div>

@@ -8,6 +8,8 @@ import fifth from "../public/fifth.jpg";
 import store from "../public/store.jpg";
 import location from "../public/location.svg";
 import phone from "../public/phone.svg";
+import subscription from "../public/subscription.jpg";
+import service from "../public/service.jpg";
 import GridCards from "./components/GridCards";
 import ReasonsCard from "./components/ReasonsCard";
 
@@ -16,7 +18,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col justify-between divide-y divide-black">
       
       {/* Hero Section */}
-      <section className="grid grid-cols-2 divide-x divide-black">
+      <section className="grid grid-cols-2">
         <div className="py-24 px-14 justify-center">
           <div className="border-b border-black h-1/6">
             <h1 className="text-5xl font-bold">
@@ -140,16 +142,16 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 divide-x divide-black h-1/2">
-            <div className="font-bold text-center divide-y divide-black">
+            <div className="font-bold text-center divide-y divide-black h-full">
               <p className="text-3xl font-semibold py-6">
                 Phone
               </p>
-              <div>
+              <div className="flex flex-col justify-center h-3/4 space-y-4">
                 <p>
-                  <Image src={phone} alt="phone_icon"/> +000000000000
+                  <Image src={phone} alt="phone_icon" className="inline"/> +000000000000
                 </p>
                 <p>
-                  <Image src={phone} alt="phone_icon"/> +000000000000
+                  <Image src={phone} alt="phone_icon" className="inline"/> +000000000000
                 </p>
               </div>
             </div>
@@ -158,7 +160,8 @@ export default function Home() {
               <p className="text-3xl font-semibold py-6">
                 Address
               </p>
-              <div className="flex self-center w-full">
+              <div className="flex flex-col self-center w-full space-y-4 justify-center h-3/4">
+                <p>OPENING HOURS: 8 TO 11 P.M.</p>
                 <p className="flex justify-center items-center">
                   <Image src={location} alt="phone_icon"/> 15/4 Xyz 
                 </p>
@@ -179,6 +182,44 @@ export default function Home() {
             </div>
             <div></div>
           </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="">
+        <div className="w-full grid justify-center py-12 border-b border-black">
+          <h2 className="text-5xl font-semibold">Our Services</h2>
+        </div>
+
+        <div className="grid grid-cols-2">
+          <div>
+            <Image
+              src={subscription}
+              alt="Lady with a flowers in a vase"
+            />
+          </div>
+
+          <div className="w-full grid justify-items-center content-center text-center h-full">
+            <p>SERVICE</p>
+            <div className="w-full grid justify-items-center content-center space-y-3 mt-4">
+              <h3 className="text-3xl font-semibold">
+                Flower Subscriptions
+              </h3>
+              <p className="w-3/4">
+                Experience the convenience and savings of regular flower deliveries with our flexible subscription service - up to 30% more profitable than one-time purchases.
+              </p>
+            </div>
+            <button className="border border-black px-5 py-4 text-sm mt-6">
+              SUBSCRIBE NOW
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <Image
+            src={service}
+            alt="services"
+          />
         </div>
       </section>
     </main>

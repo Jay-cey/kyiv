@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      brightness:{
+        25: '.25'
+      },
       colors:{
         "defaultGrey": "#808080",
       }

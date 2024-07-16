@@ -1,12 +1,14 @@
 import Image from "next/image";
 import ProductsCard from "../components/ProductsCard";
+import ProductSwipe from "../components/ProductSwipe";
 
 function page() {
   return (
     <main className="flex min-h-screen flex-col justify-between divide-y divide-black overflow-x-hidden">
         <section className="grid lg:grid-cols-2">
-            <div>
-                <Image src={"/products.jpg"} alt="" width={720} height={720} className="w-full" />
+            <div className="relative w-full h-full">
+                <Image src={"/products.jpg"} alt="" fill={true} className="object-cover hidden md:block"  />
+                <Image src={"/products.jpg"} alt="" width={420} height={420} className="w-full lg:hidden" />
             </div>
 
             <aside className="p-10 space-y-4">
@@ -15,7 +17,7 @@ function page() {
                     <p className="text-gray-500">ROSY DELIGHT</p>
                 </div>
 
-                <h5 className="text-4xl font-semibold">Rosy Delight - <span>$100</span></h5>
+                <h5 className="text-2xl md:text-4xl font-semibold">Rosy Delight - <span>$100</span></h5>
                 <p>Large exceptional bouquet composed of a selection of David Austin roses, known for their beauty and subtle fragrance. The bouquet is accompanied by seasonal foliage which will enhance these sublime flowers even.</p>
 
                 <div className="flex items-center space-x-4">
@@ -27,8 +29,12 @@ function page() {
                     </ul>
                 </div>
 
-                <div>
-                    <p className="flex justify-between"><span className="font-medium">Excellent combination with:</span><span className="text-gray-500">Vase Not Included</span></p>
+                <div className="space-y-5 w-full">
+                    <p className="flex flex-col-reverse md:flex-row justify-between"><span className="font-medium">Excellent combination with:</span><span className="text-gray-500">Vase Not Included</span></p>
+
+                    <div className="w-full">
+                        {/* <ProductSwipe/> */}
+                    </div>
                 </div>
 
                 <div className=""></div>

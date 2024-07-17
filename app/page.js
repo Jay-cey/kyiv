@@ -189,12 +189,12 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="">
+      <section className="w-full">
         <div className="w-full md:grid justify-center px-10 py-6 md:py-10 md:px-0 border-b border-black">
           <h2 className="text-3xl md:text-4xl font-semibold">Our Services</h2>
         </div>
 
-        <div className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1">
+        <div className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 w-full">
           <div className="relative lg:static h-96">
             <Image
               src={subscription}
@@ -226,7 +226,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative h-96 md:h-auto">
+        <div className="relative h-96 md:h-auto w-full">
           <Image
             src={service}
             alt="services"

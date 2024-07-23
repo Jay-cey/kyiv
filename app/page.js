@@ -25,7 +25,7 @@ export default function Home() {
         <div className="py-14 md:py-24 px-10 md:px-16 lg:px-14 justify-center">
           <div className="pb-3 md:pb-6 lg:pb-0 border-b border-black lg:h-1/6">
             <h1 className="text-4xl md:text-5xl font-bold">
-              Kyiv <br/> LuxeBouquets<sup className="font-normal text-3xl">®</sup>
+              Kyiv <br/> LuxeBouquets<sup className="font-base text-3xl">®</sup>
             </h1>
             <p className="w-4/5 py-3 text-lg lg:text-base">
               Discover Uniquely Crafted Bouquets and Gifts for Any Occasion: Spread Joy with <span className="font-bold">Our Online Flower Delivery Service</span>

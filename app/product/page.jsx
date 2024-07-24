@@ -33,7 +33,7 @@ function page() {
                     <p className="flex flex-col-reverse md:flex-row justify-between"><span className="font-medium">Excellent combination with:</span><span className="text-gray-500">Vase Not Included</span></p>
 
                     <div className="w-full">
-                        {/* <ProductSwipe/> */}
+                        <ProductSwipe/>
                     </div>
                 </div>
 

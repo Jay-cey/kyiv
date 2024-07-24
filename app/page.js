@@ -25,7 +25,7 @@ export default function Home() {
         <div className="py-14 md:py-24 px-10 md:px-16 lg:px-14 justify-center">
           <div className="pb-3 md:pb-6 lg:pb-0 border-b border-black lg:h-1/6">
             <h1 className="text-4xl md:text-5xl font-bold">
-              Kyiv <br/> LuxeBouquets<sup className="font-normal text-3xl">®</sup>
+              Kyiv <br/> LuxeBouquets<sup className="font-base text-3xl">®</sup>
             </h1>
             <p className="w-4/5 py-3 text-lg lg:text-base">
               Discover Uniquely Crafted Bouquets and Gifts for Any Occasion: Spread Joy with <span className="font-bold">Our Online Flower Delivery Service</span>
@@ -189,12 +189,12 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="">
+      <section className="w-full">
         <div className="w-full md:grid justify-center px-10 py-6 md:py-10 md:px-0 border-b border-black">
           <h2 className="text-3xl md:text-4xl font-semibold">Our Services</h2>
         </div>
 
-        <div className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1">
+        <div className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 w-full">
           <div className="relative lg:static h-96">
             <Image
               src={subscription}
@@ -226,7 +226,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative h-96 md:h-auto">
+        <div className="relative h-96 md:h-auto w-full">
           <Image
             src={service}
             alt="services"

@@ -19,13 +19,13 @@ import Socials from "./components/Socials";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col justify-between divide-y divide-black overflow-x-hidden">
-      
+
       {/* Hero Section */}
       <section className="grid md:grid-flow-row lg:grid-cols-2 divide-y divide-black">
         <div className="py-14 md:py-24 px-10 md:px-16 lg:px-14 justify-center">
           <div className="pb-3 md:pb-6 lg:pb-0 border-b border-black lg:h-1/6">
             <h1 className="text-4xl md:text-5xl font-bold">
-              Kyiv <br/> LuxeBouquets<sup className="font-base text-3xl">®</sup>
+              Kyiv <br /> LuxeBouquets<sup className="font-base text-3xl">®</sup>
             </h1>
             <p className="w-4/5 py-3 text-lg lg:text-base">
               Discover Uniquely Crafted Bouquets and Gifts for Any Occasion: Spread Joy with <span className="font-bold">Our Online Flower Delivery Service</span>
@@ -33,13 +33,13 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 py-4">
-            <Image 
+            <Image
               src={hero}
               alt="Hero Section Image"
               // height={250}
               className="w-5/6"
-             />
-            
+            />
+
             <div className="border-l border-black h-full grid items-end">
               <p className="text-sm lg:text-xs pl-4">
                 Experience the joy of giving with our modern floral studio. Order online and send fresh flowers, plants and gifts today.
@@ -87,7 +87,7 @@ export default function Home() {
             img={fifth}
             arr="right"
             reverse={false}
-          />          
+          />
         </div>
       </section>
 
@@ -126,7 +126,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section className="grid grid-flow-row lg:grid-cols-2 divide-y lg:divide-x divide-black">
+      <section className="grid grid-flow-row lg:grid-cols-2 divide-y lg:divide-x divide-black" id="contact">
         <div className="h-full divide-y divide-black border-t border-black lg:border-none">
 
           {/* Contact Box */}
@@ -135,7 +135,7 @@ export default function Home() {
             <p className="text-lg font-semibold md:mt-6">We will call you back</p>
 
             <div className="md:grid grid-cols-2 md:space-x-5 space-y-4 md:space-y-0 pb-6 md:pb-0">
-              <input type="phone" placeholder="+000 XX XXX XX XX" className="border py-4 px-4 w-full md:w-auto"/>
+              <input type="phone" placeholder="+000 XX XXX XX XX" className="border py-4 px-4 w-full md:w-auto" />
               <button className="bg-black text-white py-4 px-8  w-full md:w-auto">BOOK A CALL</button>
             </div>
           </div>
@@ -148,10 +148,10 @@ export default function Home() {
               </p>
               <div className="p-10 md:p-0 md:flex md:flex-col justify-center md:h-3/4 space-y-4">
                 <p>
-                  <Image src={phone} alt="phone_icon" className="inline"/> +000000000000
+                  <Image src={phone} alt="phone_icon" className="inline" /> +000000000000
                 </p>
                 <p>
-                  <Image src={phone} alt="phone_icon" className="inline"/> +000000000000
+                  <Image src={phone} alt="phone_icon" className="inline" /> +000000000000
                 </p>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function Home() {
               <div className="p-10 md:p-0 md:flex md:flex-col w-full space-y-4 justify-center md:h-3/4">
                 <p>OPENING HOURS: 8 TO 11 P.M.</p>
                 <p className="flex md:justify-center md:items-center">
-                  <Image src={location} alt="phone_icon"/> 15/4 Xyz 
+                  <Image src={location} alt="phone_icon" /> 15/4 Xyz
                 </p>
               </div>
             </div>
@@ -182,7 +182,7 @@ export default function Home() {
               <p className="font-semibold text-3xl">Follow us</p>
             </div>
             <div className="px-10 grid content-center pb-4 md:pb-0">
-              <Socials/>
+              <Socials />
             </div>
           </div>
         </div>
@@ -206,7 +206,7 @@ export default function Home() {
               src={subscription}
               alt="Lady with a flowers in a vase"
               className="w-full hidden lg:block"
-              // fill={true}
+            // fill={true}
             />
           </div>
 
@@ -233,11 +233,11 @@ export default function Home() {
             className="brightness-50 hidden md:block"
           />
           <Image
-              src={service}
-              alt="services"
-              className=" brightness-50 object-cover object-top lg:hidden"
-              fill={true}
-            />
+            src={service}
+            alt="services"
+            className=" brightness-50 object-cover object-top lg:hidden"
+            fill={true}
+          />
           <div className="absolute top-0 text-white text-center w-full grid h-full content-center justify-items-center px-10">
             <p className="text-xs md:text-sm">SERVICE</p>
             <div className="w-full grid justify-items-center content-center space-y-3 mt-4">
